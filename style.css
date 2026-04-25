@@ -166,9 +166,11 @@ h2 {
 }
 
 .hero-graphic img {
-    max-width: 100%;
+    width: 100%; 
+    max-width: 450px; 
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    object-fit: cover; 
 }
 
 /* --- MINUST --- */
