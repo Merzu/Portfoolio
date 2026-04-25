@@ -6,37 +6,24 @@
     <title>Joonas Mägi | IT-süsteemide spetsialist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Lisame väikese stiilitäienduse uute info-kaartide jaoks, et loetelud näeksid ilusad välja */
-        .card-content ul {
-            list-style-position: inside;
-            margin-top: 10px;
-            color: var(--text-light);
-        }
-        .card-content li {
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-        }
-        .contact-info {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-    </style>
 </head>
 <body>
 
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Joonas<strong>Mägi</strong></a>
+            <a href="#" class="logo">Joonas Mägi</a>
+            
             <nav>
                 <ul class="nav-links">
                     <li><a href="#avaleht">Avaleht</a></li>
                     <li><a href="#minust">Minust</a></li>
-                    <li><a href="#saavutused">Haridus & Saavutused</a></li>
+                    <li><a href="#haridus">Haridus</a></li>
+                    <li><a href="#voistlused">Võistlused</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
+            
+            <button id="theme-toggle" class="theme-btn">🌙 Tume</button>
         </div>
     </header>
 
@@ -45,7 +32,7 @@
             <div class="hero-text">
                 <h1>Hei, mina olen <span class="highlight">Joonas</span></h1>
                 <p>Olen <strong>IT-süsteemide spetsialisti eriala õpilane</strong> Tartu Rakenduslikus Kolledžis. Minu kireks on tehnoloogia, küberturvalisus ja süsteemide sujuv toimimine.</p>
-                <a href="#saavutused" class="btn">Vaata minu saavutusi</a>
+                <a href="#haridus" class="btn">Vaata minu haridust</a>
             </div>
             <div class="hero-graphic">
                 <img src="profiilipilt.png" alt="Joonas Mägi">
@@ -74,19 +61,26 @@
         </div>
     </section>
 
-    <section id="saavutused" class="portfolio">
+    <section id="haridus" class="portfolio">
         <div class="container">
-            <h2>Haridus ja Võistlused</h2>
-            <div class="grid">
+            <h2>Haridus</h2>
+            <div class="grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
                 <div class="card">
                     <div class="card-content">
-                        <h3>Hariduskäik</h3>
                         <ul>
                             <li><strong>2025 – ...</strong><br>Tartu Rakenduslik Kolledž (VOCO)<br><em>IT-süsteemide spetsialist (Kutsekeskharidus)</em></li>
-                            <li><strong>2016 – 2025</strong><br>Pirita Majandusgümnaasium<br><em>Põhiharidus</em></li>
+                            <li style="margin-top: 15px;"><strong>2016 – 2025</strong><br>Pirita Majandusgümnaasium<br><em>Põhiharidus</em></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voistlused" class="portfolio bg-alt">
+        <div class="container">
+            <h2>Võistlused ja saavutused</h2>
+            <div class="grid">
                 <div class="card">
                     <div class="card-content">
                         <h3>Küberturvalisus (CTF)</h3>
@@ -130,5 +124,19 @@
         <p>&copy; 2026 Joonas Mägi. Kõik õigused kaitstud.</p>
     </footer>
 
+    <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                themeBtn.textContent = '☀️ Hele';
+            } else {
+                themeBtn.textContent = '🌙 Tume';
+            }
+        });
+    </script>
 </body>
 </html>
