@@ -6,6 +6,23 @@
     <title>Joonas Mägi | IT-süsteemide spetsialist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Lisame väikese stiilitäienduse uute info-kaartide jaoks, et loetelud näeksid ilusad välja */
+        .card-content ul {
+            list-style-position: inside;
+            margin-top: 10px;
+            color: var(--text-light);
+        }
+        .card-content li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        .contact-info {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,7 +33,7 @@
                 <ul class="nav-links">
                     <li><a href="#avaleht">Avaleht</a></li>
                     <li><a href="#minust">Minust</a></li>
-                    <li><a href="#portfoolio">Oskused & Kogemused</a></li>
+                    <li><a href="#saavutused">Haridus & Saavutused</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
@@ -27,60 +44,68 @@
         <div class="container hero-container">
             <div class="hero-text">
                 <h1>Hei, mina olen <span class="highlight">Joonas</span></h1>
-                <p>Olen <strong>IT-süsteemide spetsialist (tase 4)</strong>. Minu kireks on tagada, et arvutivõrgud, serverid ja operatsioonisüsteemid töötaksid sujuvalt, turvaliselt ja efektiivselt.</p>
-                <a href="#portfoolio" class="btn">Vaata minu tegemisi</a>
+                <p>Olen <strong>IT-süsteemide spetsialisti eriala õpilane</strong> Tartu Rakenduslikus Kolledžis. Minu kireks on tehnoloogia, küberturvalisus ja süsteemide sujuv toimimine.</p>
+                <a href="#saavutused" class="btn">Vaata minu saavutusi</a>
             </div>
             <div class="hero-graphic">
-                <img src="https://via.placeholder.com/400x400/2563eb/ffffff?text=Sinu+Pilt/Graafika" alt="Joonas Mägi">
+                <img src="profiilipilt.png" alt="Joonas Mägi">
             </div>
         </div>
     </section>
 
     <section id="minust" class="about">
         <div class="container">
-            <h2>Minust</h2>
+            <h2>Enesetutvustus</h2>
             <div class="about-content">
-                <p>Õpin Tartu Rakenduslikus Kolledžis (VOCO) info- ja kommunikatsioonitehnoloogia erialal, keskendudes IT-süsteemidele. Igapäevaselt tegelen IT-taristu kavandamise, seadistamise ja haldamisega. Mulle meeldib lahendada keerulisi tehnilisi probleeme ja pakkuda kasutajatuge, mis päriselt inimesi aitab.</p>
-                <p>Lisaks riistvarale, võrkudele ja operatsioonisüsteemidele (Windows, Linux) tunnen suurt huvi ka pilveteenuste ning programmeerimise vastu, mis annab mulle laiema pildi kogu IT-maailma toimimisest.</p>
+                <p>Olen IT-huviline noor, kelle tehnoloogiahuvi sai alguse juba varakult – 10-aastaselt ehitasin oma esimese lauaarvuti, mida olen aastatega uuendanud ja kasutan edukalt tänaseni. Pärast põhikooli lõpetamist Tallinnas otsustasin kolida iseseisvalt Tartusse, et asuda õppima mulle südamelähedast eriala.</p>
+                <p>Mind iseloomustab kohusetundlikkus, abivalmidus ja sõbralikkus. Mulle on oluline pidada kinni tähtaegadest ning olla usaldusväärne meeskonnakaaslane. Vabal ajal laen akusid korvpalli, rattasõidu ja arvutimängudega.</p>
                 
                 <div class="skills">
                     <span class="skill-tag">Windows OS</span>
                     <span class="skill-tag">Linux OS</span>
-                    <span class="skill-tag">Pilveteenused</span>
                     <span class="skill-tag">Arvutivõrgud</span>
                     <span class="skill-tag">Küberturvalisus</span>
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">HTML & CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Riistvara haldus</span>
+                    <span class="skill-tag">Riistvara</span>
+                    <span class="skill-tag">Meeskonnatöö</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfoolio" class="portfolio">
+    <section id="saavutused" class="portfolio">
         <div class="container">
-            <h2>Põhipädevused ja projektid</h2>
+            <h2>Haridus ja Võistlused</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x250/e2e8f0/475569?text=Serverid+%26+OS" alt="Serverid ja OS">
                     <div class="card-content">
-                        <h3>Süsteemihaldus ja Serverid</h3>
-                        <p>Windows ja Linux operatsioonisüsteemide paigaldamine, seadistamine ja hooldus. Rakendusserverite ja majutuskeskkondade riistvara haldamine.</p>
+                        <h3>Hariduskäik</h3>
+                        <ul>
+                            <li><strong>2025 – ...</strong><br>Tartu Rakenduslik Kolledž (VOCO)<br><em>IT-süsteemide spetsialist (Kutsekeskharidus)</em></li>
+                            <li><strong>2016 – 2025</strong><br>Pirita Majandusgümnaasium<br><em>Põhiharidus</em></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x250/e2e8f0/475569?text=V%C3%B5rgud+%26+Turve" alt="Võrgud ja turvalisus">
                     <div class="card-content">
-                        <h3>Arvutivõrgud ja Küberturvalisus</h3>
-                        <p>Kohtvõrkude (LAN) loomine ja haldus. IT-süsteemide turvalisuse tagamine ja kaitsmine küberohtude eest, lähtudes parimatest praktikatest.</p>
+                        <h3>Küberturvalisus (CTF)</h3>
+                        <p>Olen aktiivselt osalenud mitmetel küberturvalisuse võistlustel:</p>
+                        <ul>
+                            <li><strong>Küberpuuring 2025</strong> (VOCO Tiim1)</li>
+                            <li><strong>Säkerhets-SM 2026</strong> (Tiim Tiigrikutsikad)</li>
+                            <li><strong>ECSC Estonia Preliminary 2026</strong></li>
+                            <li><strong>RabaCTF 2026</strong> (A/D CTF, Tiim VOCO)</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x250/e2e8f0/475569?text=Kood+%26+Veeb" alt="Programmeerimine">
                     <div class="card-content">
-                        <h3>Skriptimine ja Veebiarendus</h3>
-                        <p>Protsesside automatiseerimine Pythoniga ning veebilehtede struktuuri ja funktsionaalsuse loomine (HTML, CSS, JavaScript).</p>
+                        <h3>Programmeerimine</h3>
+                        <p>Panen oma oskusi proovile ka arenduses:</p>
+                        <ul>
+                            <li><strong>ASI KARIKAS 2026</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -90,8 +115,14 @@
     <section id="kontakt" class="contact">
         <div class="container">
             <h2>Võta ühendust</h2>
-            <p>Otsid oma tiimi nutikat IT-spetsialisti või vajad abi süsteemide haldamisel? Kirjuta mulle!</p>
-            <a href="mailto:sinu.email@example.com" class="btn">Saada e-kiri</a>
+            <p>Olen avatud uutele väljakutsetele, praktikapakkumistele ja koostööle!</p>
+            
+            <div class="contact-info">
+                <p>Email: <a href="mailto:joonas.magi@voco.ee" style="color: var(--primary-color); text-decoration: none;">joonas.magi@voco.ee</a></p>
+                <p>Telefon: +372 5908 4805</p>
+            </div>
+
+            <a href="mailto:joonas.magi@voco.ee" class="btn">Saada e-kiri</a>
         </div>
     </section>
 
